@@ -3,4 +3,4 @@ A Basic Calculator made with ElectronJs
 
 Simple to Use
 
-|[Repo List](./Desktop/print1)
+image:: ./Desktop/print1
