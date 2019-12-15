@@ -7,5 +7,5 @@ ________________
 
 Operations (+, -, *, **, /)
 
-Acess our website for more information
-[a link](darkarrayorg.home.blog)
+Website to download:
+darkarrayorg.home.blog
