@@ -2,6 +2,6 @@
 A Basic Calculator made with ElectronJs 
 
 Simple to Use
-image::print1
+print1
 
 Operations (+, -, *, **, /)
