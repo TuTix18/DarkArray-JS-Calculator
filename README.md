@@ -6,3 +6,6 @@ Simple to Use, Light for old computers.
 ________________
 
 Operations (+, -, *, **, /)
+
+Acess our website for more information
+(darkarrayorg.home.blog)
