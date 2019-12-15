@@ -1,7 +1,9 @@
 # DarkArray-JS-Calculator
 A Basic Calculator made with ElectronJs 
 
+________________
 Simple to Use
-![print1](/print1)
+________________
+
 
 Operations (+, -, *, **, /)
