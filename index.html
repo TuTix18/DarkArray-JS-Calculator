@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Dark Array JS Calculator </title>
+  </head>
+  <body>
+    <style media="screen">
+    html {
+      font-size: 62.5%;
+      box-sizing: border-box;
+    }
+    
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
+    }
+    
+    .calculator {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+    }
+    
+    .calculator-screen {
+      width: 100%;
+      font-size: 5rem;
+      height: 80px;
+      border: none;
+      background-color: #252525;
+      color: #fff;
+      text-align: right;
+      padding-right: 20px;
+      padding-left: 10px;
+    }
+    button {
+      height: 60px;
+      background-color: #fff;
+      border-radius: 3px;
+      border: 1px solid #D3D3D3;
+      background-color: transparent;
+      font-size: 2rem;
+      color: #333;
+      background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+      text-shadow: 0 1px rgba(255,255,255,.4);
+    }
+    .clck {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    </style>
+    <form name="main">
+    <div id="calculator">
+    <input id="in" type="text" class="calculator-screen" value="" disabled />
+    <div id="header" class="clck">
+    <button onclick="clean()" id="c" type="button" name="c">C</button>
+    <button value="1" onclick="m(1)" type="button" name="1">1</button>
+    <button value="2" onclick="m(2)" type="button" name="2">2</button>
+    <button value="3" onclick="m(3)" type="button" name="3">3</button>
+    <button value="4" onclick="m(4)" type="button" name="4">4</button>
+    <button value="5" onclick="m(5)" type="button" name="5">5</button>
+    <button value="6" onclick="m(6)" type="button" name="6">6</button>
+    <button value="7" onclick="m(7)" type="button" name="7">7</button>
+    <button value="8" onclick="m(8)" type="button" name="8">8</button>
+    <button value="9" onclick="m(9)" type="button" name="9">9</button>
+    <button value="0" onclick="m(0)" type="button" name="0">0</button>
+    
+    <button onclick="m('+')" id="pls" class="sig" type="button" name="plus">+</button>
+    <button onclick="m('-')" id="mns" class="sig" type="button" name="minus">-</button>
+    <button onclick="m('*')" id="tms" class="sig" type="button" name="times">*</button>
+    <button onclick="m('/')" id="dve" class="sig" type="button" name="divide">/</button>
+    <button onclick="calc()" id="equal" class="sig" type="button" name="power">=</button>
+    </div>
+  </div>
+  <script>
+  function clean() {
+      document.getElementById('in').value = '';
+  }
+  
+  function m(val){
+      document.getElementById('in').value += val;
+  }
+  
+  function calc() {
+      var res = 0;
+      res = document.getElementById('in').value;
+      
+      document.getElementById('in').value = '';
+      
+      document.getElementById('in').value = eval(res);
+  }
+  </script>
+</form>
+</body>
+</html>

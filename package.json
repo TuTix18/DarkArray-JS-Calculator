@@ -1,0 +1,17 @@
+{
+  "name": "dark-array-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^7.1.5",
+    "electron-packager": "^14.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . JS-Calculator - DarkArray"
+  },
+  "author": "TuTix18 - Dark Array",
+  "license": "ISC"
+}
